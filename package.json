@@ -5,14 +5,16 @@
   "dependencies": {
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "react-scripts": "3.2.0"
+    "react-scripts": "3.2.0",
+    "serve": "^11.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
+    "start:server": "npx serve build -l 3000",
     "build": "react-scripts build",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
-    "test": "start-server-and-test start http-get://localhost:3000 cy:run",
+    "test": "start-server-and-test start:server http-get://localhost:3000 cy:run",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
