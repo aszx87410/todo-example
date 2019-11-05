@@ -34,7 +34,7 @@ class App extends React.Component {
         content: text,
         isDone: false
       }],
-      text: ''
+      text: '1'
     })
   }
 
