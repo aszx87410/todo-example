@@ -2,7 +2,6 @@ import React from 'react';
 import Todo from './Todo'
 import './App.css';
 
-// test
 function Filter({ onClick, name, text, active }) {
   return (
     <li className="nav-item">
