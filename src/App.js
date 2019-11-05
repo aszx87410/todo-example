@@ -6,11 +6,11 @@ import './App.css';
 function Filter({ onClick, name, text, active }) {
   return (
     <li className="nav-item">
-      <a className={"nav-link " + (active ? "active" : "")} href="#"
+      <span className={"nav-link " + (active ? "active" : "")}
         onClick={() => onClick(name)}
       >
           {text}
-      </a>
+      </span>
     </li>
   )
 }
